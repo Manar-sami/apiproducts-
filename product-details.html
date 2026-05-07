@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <title>product-details</title>
+</head>
+<body class="bg-[#020618]">
+   <header class="w-full z-20 py-5 bg-slate-900/95">
+  <div class="container mx-auto">
+    <div class="flex justify-between items-center">
+      
+      <div>
+        <a href="./index.html" class="text-[#e3bc2f] text-xl font-bold">ShopZone</a>
+      </div>
+
+      <div class="text-white flex items-center gap-4">
+        <a href="./index.html" class="hover:text-[#e3bc2f]">Home</a>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+
+    </div>
+  </div>
+</header>  
+
+  <main>
+    <div class="p-10">
+        <div class="container mx-auto">
+            <div class="pt-9">
+              <a href="./index.html" class=" text-[#e3bc2f] hover:text-[#d4a81f]">
+                   <i class="fa-solid fa-arrow-left-long mr-3"></i>
+                    <span >Back to Home</span>
+              </a>   
+             
+             <div class="bg-[#151f33]  w-full mx-auto product-details p-9 rounded-[20px] mt-7 ">
+               <div class="grid grid-cols-1  md:grid-cols-2  gap-2">
+                 <div class="p-5  pr-img bg-[#111a2f]  rounded-[20px]">
+                     
+                 </div>
+
+                 <div class="px-5 py-2  flex flex-col gap-5">
+                     <div class=" bg-[#e3bc2f12] rounded-[20px] w-fit 
+                     border border-[#e3bc2f]
+                        py-1 px-3">
+                   
+                        <p class="text-[#e3bc2f] text-[14px] category"></p>
+                    </div>
+
+                    <div>
+                        <h2 class="productname text-[30px] font-bold text-white"></h2>
+                        <span class="text-[#a1a1a1] brand text-[16px]"></span>
+                    </div>
+
+                    <div>
+                        <span class="text-[#ffa600] text-[36px] font-bold price"></span>
+                    </div>
+
+                    <div class="text-[16px] text-[#01b04a] "> 
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="instock"></span>
+                    </div>
+
+                    <div>
+                        <span class="text-white font-bold ">Description</span>
+                        <p class="mt-2 text-[#a1a1a1] description"></p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-amber-500 to-orange-500 
+                    hover:to-orange-600 text-white shadow-lg shadow-amber-500/30 hover:shadow-xl hover:shadow-amber-500/40
+                     font-bold py-2 text-center w-full  rounded-xl  hover:bg-[#d4a81f]"">
+                      <a href="#" >Add to Cart</a>
+                    </div>
+
+                  
+                 </div>
+               </div> 
+                 <div class="mt-12 pt-12 border-t border-white/10">
+                  <h3 class="reviews text-white font-bold text-[24px]">Reviews</h3>
+
+                   <div class=" Reviews flex flex-col mb-6 gap-3 py-4">
+                  </div>
+                 </div>
+             </div>
+               
+         
+           </div>
+        </div>
+    </div>
+  </main>
+
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./assets/js/product-details.js"></script>
+</body>
+</html>
