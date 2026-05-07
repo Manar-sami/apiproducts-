@@ -28,6 +28,7 @@
 </header>
 
 <main>
+
   <div class="h-screen  bg-cover bg-center  py-50" style="background-image: url('./assets/hero.jpg');">
          <div class="absolute inset-0  bg-[#0e162a]/80"></div>
      <div class="relative container mx-auto">
@@ -56,7 +57,41 @@
     </div>
 
 
-    
+  <div class="py-20">
+      <div class="container mx-auto">
+  
+         <div class="text-white">
+          <h2 class="text-[30px] font-bold">Explore Categories</h2>
+          <p class="text-[#a1a1a1] text-[16px]">Choose the category that suits you</p>
+         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 category gap-2.5">
+
+          <span class="loader"></span>
+
+        </div>
+
+      </div>
+     
+
+    </div>
+
+
+
+    <div class="py-10">
+      <div class="container mx-auto">
+         <div class="text-white">
+          <h2 class="text-[30px] font-bold">Featured Products</h2>
+          <p class="text-[#a1a1a1] text-[16px]">Discover the latest and best products</p>
+         </div>
+
+          <div class="product grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5 py-3 product">
+           <span class="loader"></span>
+         </div>
+
+
+      </div>
+    </div>
 </main>
   
 
@@ -132,5 +167,7 @@
     </div>
    </footer>
    
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./assets/js/main.js"></script>
 </body>
 </html>
