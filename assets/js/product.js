@@ -42,6 +42,12 @@ async function getproducts(){
 
     document.querySelector('.product').innerHTML=data;
 
+
+
+
+
+
+    
  }
 
  displayproducts();

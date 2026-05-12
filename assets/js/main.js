@@ -24,7 +24,7 @@ const displayCategories = async () => {
    try{
      const categories = await getcategories();
      
-    const data=categories.map((category) => {
+    const data=categories.slice(0,8).map((category) => {
      return`
      
        <a href="./product.html?category=${category}" class="text-white flex  justify-between items-center group
@@ -94,6 +94,7 @@ const displayproducts = async () => {
       ` 
       }).join(" ");
       document.querySelector('.product').innerHTML = data;
+
   }
 
   catch(error){ 
@@ -103,6 +104,9 @@ const displayproducts = async () => {
   finally{
       loader.style.display = "none";
   }
+
+
+ 
    }
   
 

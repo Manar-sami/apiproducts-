@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/output.css">
-    <title>ShopZone</title>
-
-    
+    <title>Document</title>
 </head>
-<body class="bg-[#020618]">
-<header class="absolute top-0 left-0 w-full z-20 py-5 header transition-all duration-300">
+<body class="bg-[#020618] ">
+    <header class=" bg-slate-900/95 absolute top-0 left-0 w-full z-20 py-5 header transition-all duration-300">
   <div class="container mx-auto">
     <div class="flex justify-between items-center ">
       
@@ -20,13 +18,13 @@
           <ul class="flex justify-between items-center gap-3 text-white ">
             <li><a href="./index.html"  class="hover:text-[#e3bc2f] transition-all ">Shop</a></li>
             <li><a href="./category.html" class="hover:text-[#e3bc2f] transition-all ">Categories</a></li>
-            <li><a href="./allproducts.html" class="hover:text-[#e3bc2f] transition-all ">Products</a></li>
+             <li><a href="./allproducts.html" class="hover:text-[#e3bc2f] transition-all ">Products</a></li>
             <li><a href="" class="hover:text-[#e3bc2f] transition-all ">Deals</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="text-white flex items-center gap-4 home-link"">
+      <div class="text-white flex items-center gap-4 home-link">
 
        
         <a href="./index.html" class="hover:text-[#e3bc2f]">Home</a>
@@ -37,88 +35,33 @@
   </div>
 </header>
 
-<main>
 
-  <div class="h-screen  bg-cover bg-center  py-50" style="background-image: url('./assets/hero.jpg');">
-         <div class="absolute inset-0  bg-[#0e162a]/80"></div>
+ <div class="h-[170px]  bg-cover bg-center bg-slate-900/95 py-50" ">
+         
      <div class="relative container mx-auto">
        <div class=" flex flex-col justify-center items-center gap-5">
-          <div class="rounded-[40px] bg-[#ffd23030] py-[8px] px-[15px] w-fit">
-            <p class="text-[#ffd230bf]">Discover the New Experience</p>
-          </div>
+         
 
-          <h1 class="text-white text-6xl font-bold mt-4">A World of Possibilities</h1>
-
-          <p class="text-white">Explore a curated selection of premium products tailored to your needs</p>
-
-
-          <div class="py-10 flex gap-4">
-             
-          
-            <a href="" class="bg-[#e3bc2f] text-white py-2 px-4 
-            rounded-[10px] font-bold hover:bg-[#d4a81f] transition duration-300">Start Exploring</a>
-               <a href="" class="bg-[#ffffff4a] text-white py-2 px-4 
-            rounded-[10px] font-bold hover:bg-[#d4a81f] transition duration-300">Learn More</a>
-
-           
-          </div>
-       </div>
-     </div>
-    </div>
-
-
-  <div class="py-20">
-      <div class="container mx-auto">
-  
-         <div class="text-white flex justify-between items-center ">
-         <div>
-           <h2 class="text-[30px] font-bold">Explore Categories</h2>
-          <p class="text-[#a1a1a1] text-[16px]">Choose the category that suits you</p>
-         </div>
-
-          <a href="./category.html" class="text-[#e3bc2f] hover:text-[#d4a81f] transition duration-300">View All ></a>
-         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 category gap-2.5">
-
-          <span class="loader"></span>
-
-        </div>
-
-      </div>
-     
-
-    </div>
-
-
-
-    <div class="py-10">
-      <div class="container mx-auto">
-         <div class="text-white  flex justify-between items-center">
-          <div>
-            <h2 class="text-[30px] font-bold">Featured Products</h2>
-          <p class="text-[#a1a1a1] text-[16px]">Discover the latest and best products</p>
-          </div>
-
-           <a href="./allproducts.html" class="text-[#e3bc2f] hover:text-[#d4a81f] transition duration-300">View All ></a>
-         </div>
-
-          <div class="product grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5 py-3 product">
-           <span class="loader"></span>
-         </div>
-
+          <h1 class="text-white text-6xl font-bold mt-4">Category</h1>
 
         
 
 
-      </div>
+         
+       </div>
+     </div>
     </div>
 
+        <div class="container mx-auto">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 category gap-2.5">
 
-</main>
-  
+          <span class="loader"></span>
 
-   <footer class="bg-[#151f33] mt-9 ">
+        </div>
+          </div>
+
+
+<footer class="bg-[#151f33] mt-9 ">
     <div class="container mx-auto py-10 ">
        <div class="grid grig-cols-1 md:grid-cols-2 lg:grid-cols-4 py-3 gap-5">
         <div class="px-4">
@@ -189,8 +132,8 @@
        </div>
     </div>
    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    
-   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-   <script src="./assets/js/main.js"></script>
-</body>
+    <script src="./assets/js/category.js"></script>
 </html>
